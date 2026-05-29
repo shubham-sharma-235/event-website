@@ -25,7 +25,6 @@
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#home" class="nav-logo">
-        <span class="logo-icon">✦</span>
         <span class="logo-text">Éclat<em> Events</em></span>
       </a>
       <ul class="nav-links" id="navLinks">
@@ -44,47 +43,67 @@
 
   <!-- ══════════════════════════ HERO ══════════════════════════ -->
   <section class="hero" id="home">
-    <div class="hero-bg">
-      <div class="hero-gradient"></div>
-      <div class="hero-grid-overlay"></div>
+
+  <!-- Background Video -->
+  <div class="hero-bg">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="https://cdn.pixabay.com/video/2022/10/23/136133-764371501_large.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-gradient"></div>
+    <div class="hero-grid-overlay"></div>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal-up" data-delay="0">
+      — India's Premier Luxury Event Studio —
+    </p>
+
+    <h1 class="hero-headline reveal-up" data-delay="100">
+      Where Dreams
+      Become
+      Reality
+    </h1>
+
+    <p class="hero-sub reveal-up" data-delay="200">
+      From intimate soirées to grand destination weddings — we craft experiences that last a lifetime.
+    </p>
+
+    <div class="hero-buttons reveal-up" data-delay="300">
+      <a href="#portfolio" class="btn-primary">Explore Our Work</a>
+      <a href="#contact" class="btn-ghost">Start Planning</a>
     </div>
-    <div class="hero-content">
-      <p class="hero-eyebrow reveal-up" data-delay="0">— India's Premier Luxury Event Studio —</p>
-      <h1 class="hero-headline reveal-up" data-delay="100">
-        Where Dreams
-        <em>Become</em>
-        <span class="gold-text">Legends</span>
-      </h1>
-      <p class="hero-sub reveal-up" data-delay="200">
-        From intimate soirées to grand destination weddings — we craft experiences that last a lifetime.
-      </p>
-      <div class="hero-buttons reveal-up" data-delay="300">
-        <a href="#portfolio" class="btn-primary">Explore Our Work</a>
-        <a href="#contact" class="btn-ghost">Start Planning</a>
-      </div>
+  </div>
+
+  <!-- Floating Stats -->
+  <div class="hero-stats">
+    <div class="stat-card reveal-up" data-delay="400">
+      <span class="stat-num" data-target="500">0</span>
+      <span class="stat-plus">+</span>
+      <span class="stat-label">Events Curated</span>
     </div>
 
-    <!-- Floating Stats -->
-    <div class="hero-stats">
-      <div class="stat-card reveal-up" data-delay="400">
-        <span class="stat-num" data-target="500">0</span><span class="stat-plus">+</span>
-        <span class="stat-label">Events Curated</span>
-      </div>
-      <div class="stat-card reveal-up" data-delay="500">
-        <span class="stat-num" data-target="15">0</span><span class="stat-plus">+</span>
-        <span class="stat-label">Years of Excellence</span>
-      </div>
-      <div class="stat-card reveal-up" data-delay="600">
-        <span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span>
-        <span class="stat-label">Destinations</span>
-      </div>
+    <div class="stat-card reveal-up" data-delay="500">
+      <span class="stat-num" data-target="15">0</span>
+      <span class="stat-plus">+</span>
+      <span class="stat-label">Years of Excellence</span>
     </div>
 
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
+    <div class="stat-card reveal-up" data-delay="600">
+      <span class="stat-num" data-target="50">0</span>
+      <span class="stat-plus">+</span>
+      <span class="stat-label">Destinations</span>
     </div>
-  </section>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+
+</section>
 
   <!-- ══════════════════════════ ABOUT ══════════════════════════ -->
   <section class="about section" id="about">
@@ -113,7 +132,7 @@
           <p class="about-body">
             We don't just manage events — we sculpt experiences. From the fragrance in the air to the last petal on the aisle, every detail is considered, curated, and crafted with uncompromising precision.
           </p>
-          <div class="about-counters">
+          <!-- <div class="about-counters">
             <div class="counter-item">
               <span class="counter-num" data-target="850">0</span><span>+</span>
               <span class="counter-label">Events</span>
@@ -126,7 +145,7 @@
               <span class="counter-num" data-target="32">0</span><span>+</span>
               <span class="counter-label">Awards</span>
             </div>
-          </div>
+          </div> -->
           <a href="#contact" class="btn-primary">Discover Our Process</a>
         </div>
       </div>
@@ -143,37 +162,37 @@
       </div>
       <div class="services-grid">
         <div class="service-card reveal-up" data-delay="0" style="--bg: linear-gradient(135deg, #1a0a0a, #3d1515)">
-          <div class="service-icon">💍</div>
+          <!-- <div class="service-icon">💍</div> -->
           <h3 class="service-title">Wedding Planning</h3>
           <p class="service-desc">From intimate garden ceremonies to grand ballroom galas, we orchestrate every element of your perfect day.</p>
           <a href="#contact" class="service-link">Explore →</a>
         </div>
         <div class="service-card reveal-up" data-delay="100" style="--bg: linear-gradient(135deg, #0a1a12, #0d3020)">
-          <div class="service-icon">✈️</div>
+          <!-- <div class="service-icon">✈️</div> -->
           <h3 class="service-title">Destination Weddings</h3>
           <p class="service-desc">Udaipur palaces, Goa beach sunsets, European castles — we plan weddings where the destination itself becomes a character.</p>
           <a href="#contact" class="service-link">Explore →</a>
         </div>
         <div class="service-card reveal-up" data-delay="200" style="--bg: linear-gradient(135deg, #0a0f1a, #0d1e3d)">
-          <div class="service-icon">🏛️</div>
+          <!-- <div class="service-icon">🏛️</div> -->
           <h3 class="service-title">Corporate Events</h3>
           <p class="service-desc">Product launches, leadership summits, annual galas — corporate experiences that inspire, impress, and leave lasting impressions.</p>
           <a href="#contact" class="service-link">Explore →</a>
         </div>
         <div class="service-card reveal-up" data-delay="0" style="--bg: linear-gradient(135deg, #1a120a, #3d2a0d)">
-          <div class="service-icon">🎤</div>
+          <!-- <div class="service-icon">🎤</div> -->
           <h3 class="service-title">Entertainment Management</h3>
           <p class="service-desc">Celebrity appearances, live concerts, private performances — we manage every aspect of world-class entertainment.</p>
           <a href="#contact" class="service-link">Explore →</a>
         </div>
         <div class="service-card reveal-up" data-delay="100" style="--bg: linear-gradient(135deg, #180a1a, #350d3d)">
-          <div class="service-icon">🌸</div>
+          <!-- <div class="service-icon">🌸</div> -->
           <h3 class="service-title">Luxury Decor</h3>
           <p class="service-desc">Floral installations, lighting architecture, custom fabrication — transforming spaces into breathtaking environments.</p>
           <a href="#contact" class="service-link">Explore →</a>
         </div>
         <div class="service-card reveal-up" data-delay="200" style="--bg: linear-gradient(135deg, #0a1a1a, #0d3535)">
-          <div class="service-icon">🥂</div>
+          <!-- <div class="service-icon">🥂</div> -->
           <h3 class="service-title">Hospitality & Logistics</h3>
           <p class="service-desc">Seamless guest journeys from arrival to departure — luxury concierge, accommodation, transport, and beyond.</p>
           <a href="#contact" class="service-link">Explore →</a>
