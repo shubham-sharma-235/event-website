@@ -1,5 +1,5 @@
 /* ══════════════════════════════════════════════════════════════
-   Éclat Events — script.js
+   Visva Events - script.js
    All JavaScript for interactions, animations, and behavior
    ══════════════════════════════════════════════════════════════ */
 
@@ -67,7 +67,8 @@
 (function initMobileMenu() {
   const hamburger = document.getElementById('hamburger');
   const navLinks  = document.getElementById('navLinks');
-  if (!hamburger || !navLinks) return;
+  const navbar = document.getElementById('navbar');
+  if (!hamburger || !navLinks || !navbar) return;
 
   hamburger.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
@@ -575,5 +576,5 @@ function showToast(message) {
 
 // ─── Initialize all on DOM ready ────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('✦ Éclat Events — Luxury Experience Initialized');
+  console.log('Visva Events experience initialized');
 });
