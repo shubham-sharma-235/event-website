@@ -1,5 +1,5 @@
 /* ══════════════════════════════════════════════════════════════
-   Éclat Events — Luxury Event Management Website
+   Visva Events - Event Management Website
    style.css — Complete Stylesheet
    ══════════════════════════════════════════════════════════════ */
 
@@ -1039,6 +1039,49 @@ body:has(button:hover) .cursor-ring {
 }
 
 /* ════════════════════════════════════════════════════════════════
+   VISION & MISSION
+   ════════════════════════════════════════════════════════════════ */
+.vision-mission {
+  background:
+    linear-gradient(135deg, rgba(201, 169, 110, 0.06), transparent 45%),
+    var(--black-soft);
+}
+
+.vision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+
+.vision-card {
+  min-height: 360px;
+  padding: 56px 48px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(201, 169, 110, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vision-card .section-title {
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+}
+
+.closing-cta {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(201, 169, 110, 0.14) 0%, transparent 60%),
+    var(--black);
+}
+
+.closing-cta .section-header {
+  margin-bottom: 0;
+}
+
+.closing-cta .section-desc {
+  margin-bottom: 36px;
+}
+
+/* ════════════════════════════════════════════════════════════════
    WHY US
    ════════════════════════════════════════════════════════════════ */
 .why-us {
@@ -1764,6 +1807,7 @@ body:has(button:hover) .cursor-ring {
   .about-img-placeholder { aspect-ratio: 16/7; }
 
   .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .vision-grid { grid-template-columns: 1fr; }
 
   .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
   .portfolio-item.large { grid-column: span 1; }
@@ -1824,6 +1868,7 @@ body:has(button:hover) .cursor-ring {
 
   /* Sections */
   .services-grid { grid-template-columns: 1fr; gap: 0; }
+  .vision-card { min-height: auto; padding: 40px 28px; }
   .portfolio-grid { grid-template-columns: 1fr; grid-auto-rows: 240px; }
   .portfolio-item.large { grid-column: span 1; }
   .why-grid { grid-template-columns: 1fr; gap: 0; }
